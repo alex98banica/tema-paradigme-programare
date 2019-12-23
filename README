@@ -1,0 +1,28 @@
+Problema 1:
+Am sortat Array list-ul crescator si l-am parcurs descrescator si daca restul impartirii indexului
+ numarului curent la 2 este egal cu restul impartirii dimensiunii vectorului la 2 atunci o sa extraga Tuzgu
+daca nu e randul lu Rita si o sa extraga el numarul,am facut suma celor 2 jucatori cu numerele extrase si le-am scazut
+obtinand astfel diferenta de puncte.
+
+Problema 2:
+Am memorat numerele intr-un array list pe care il ordonez crescator,apoi sterg ultimele k numere fara ultimul
+si fac suma lui Tuzgu si Rita iar daca numarul de numere ce trebuie sterse este egal cu numarul de numere total
+se va afisa 0 deoarece nu mai exista niciun numar.
+
+Problema 3: 
+Memorez numerele intr-un vector.
+Am construit o matrice dintr-o structura care contine punctajul lu Tuzgu si Rita la un moment dat din joc.
+In prima etapa Tuzgu incape primul astfel luand cate un element tuzgu va avea acel punctaj iar Rita 0,
+acste punctaje fiin memorate pe diagonala principala.
+In continuare luand cate 2 elemente din multime presupunem ca Tuzgu(deoarece incepe primul va lua maximul
+dintre cele 2 elemnte iar Rita restul si memorez rezultatele pe diagonala principala.
+La al 3lea pas peresupunem ca luam cate 3 elemente si deoarece Tuzgu este obligat sa ia din dreapta sau stanga
+el va alege unu dinre numele de la indexii curenti i sau j din acel moment din vector,luandu-l pe cel mai mare,
+iar Rita va lua maximul dintre numerele ramase iar Tuzgu este obligat sa ia din nou ce nu a luat Rita,
+astfel 	se observa ca la o tura aleatoare la care avem n elemnte pentru a obtine maximul atunci Tuzgu va lua 
+maximul dintre primele n-1 numere (adica cat a luat Rita la tura trecuta cand erau n-1 numere) plus numarul nou "adaugat"
+si maximul dintre ultimele n-1 numere plus numarul care nu era dintre cele n numere,iar Rita va avea punctajul cat a avut Tuzgu in momentul
+in care erau primele n-1 numere sau ultimele n-1 numere in functie de maximul ales anteriro de Tuzgu.
+ 
+
+
